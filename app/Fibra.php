@@ -44,7 +44,7 @@ class Fibra{
 
 
     public function colorHexa($n,$toboloose){
-        if($toboloose.equal('toboloosetwelve')){
+        if($toboloose=='toboloosetwelve'){
             if($n<=12){
                 return $this->fibra["hexa"][$n-1];
             }elseif($n>12 AND $n<=24){
@@ -80,7 +80,7 @@ class Fibra{
     }
 
     public function nameColor($n,$toboloose){
-        if($toboloose.equal('toboloosetwelve')){
+        if($toboloose=='toboloosetwelve'){
             if($n<=12){
                 return $this->fibra["nome"][$n-1];
             }elseif($n>12 AND $n<=24){
@@ -117,7 +117,7 @@ class Fibra{
     }
 
     public function groupFiber($n,$toboloose){
-        if($toboloose.equal('toboloosetwelve')){
+        if($toboloose=='toboloosetwelve'){
             if($n<=12){
                 return $this->fibra["grupo"][0];
             }elseif($n>12 AND $n<=24){

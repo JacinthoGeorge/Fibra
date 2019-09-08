@@ -41,12 +41,12 @@
     <?php
 
 if(isset($_GET['n'])):
-    echo $n = $_GET['n'];
-    echo $tuboloose = $_GET['tuboloose'];
+    $n = $_GET['n'];
+    $tuboloose = $_GET['tuboloose'];
     if($n>0):
-    echo "<div class='container-cor' style='background:".$fibra->colorHexa($n)."'>";
-    echo "<h3>".$fibra->nameColor($n)."</h3>";
-     echo "<h3>".$fibra->groupFiber($n)."</h3></div>";
+    echo "<div class='container-cor' style='background:".$fibra->colorHexa($n,$tuboloose)."'>";
+    echo "<h3>".$fibra->nameColor($n,$tuboloose)."</h3>";
+     echo "<h3>".$fibra->groupFiber($n,$tuboloose)."</h3></div>";
     endif;
 endif;
 
