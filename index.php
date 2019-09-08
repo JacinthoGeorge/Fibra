@@ -16,23 +16,23 @@
 </head>
 <body>  
 
-<!--
-<header>
-    <a href="#">Logo</a>
-    <nav>
-        <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produto</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-</header>
--->
-
 <div class="container">
 
     <div>
         <form action="" method="GET">
+
+        <p>Selecione Tubolosse referente a fibra</p>
+
+        <div>
+        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofseix"
+                checked>
+        <label for="06">06</label>
+        </div>
+
+        <div>
+        <input type="radio" id="tubolooseoftwelve" name="tuboloose" value="tubolooseoftwelve">
+        <label for="12">12</label>
+        </div>
             <input name="n" type="text" placeholder="Digite o número da fibra">
             <input id='botao' type="submit" value="Checar">
         </form>
@@ -41,7 +41,8 @@
     <?php
 
 if(isset($_GET['n'])):
-    $n = $_GET['n'];
+    echo $n = $_GET['n'];
+    echo $tuboloose = $_GET['tuboloose'];
     if($n>0):
     echo "<div class='container-cor' style='background:".$fibra->colorHexa($n)."'>";
     echo "<h3>".$fibra->nameColor($n)."</h3>";
