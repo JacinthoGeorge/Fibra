@@ -43,58 +43,114 @@ class Fibra{
     ];
 
 
-    public function colorHexa($n){
-        if($n<=12){
-            return $this->fibra["hexa"][$n-1];
-        }elseif($n>12 AND $n<=24){
-            return $this->fibra["hexa"][$n-13];
-        }elseif($n>24 AND $n<=36){
-            return $this->fibra["hexa"][$n-25];
-        }elseif($n>36 AND $n<=48){
-            return $this->fibra["hexa"][$n-37];
-        }elseif($n>48 AND $n<=60){
-            return $this->fibra["hexa"][$n-49];
-        }elseif($n>60 AND $n<=72){
-            return $this->fibra["hexa"][$n-61];
+    public function colorHexa($n,$toboloose){
+        if($toboloose.equal('toboloosetwelve')){
+            if($n<=12){
+                return $this->fibra["hexa"][$n-1];
+            }elseif($n>12 AND $n<=24){
+                return $this->fibra["hexa"][$n-13];
+            }elseif($n>24 AND $n<=36){
+                return $this->fibra["hexa"][$n-25];
+            }elseif($n>36 AND $n<=48){
+                return $this->fibra["hexa"][$n-37];
+            }elseif($n>48 AND $n<=60){
+                return $this->fibra["hexa"][$n-49];
+            }elseif($n>60 AND $n<=72){
+                return $this->fibra["hexa"][$n-61];
+            }else{
+                return "red";
+            }
         }else{
-            return "red";
-        }
+            if($n<=6){
+                return $this->fibra["hexa"][$n-1];
+            }elseif($n>6 AND $n<=12){
+                return $this->fibra["hexa"][$n-7];
+            }elseif($n>12 AND $n<=18){
+                return $this->fibra["hexa"][$n-13];
+            }elseif($n>18 AND $n<=24){
+                return $this->fibra["hexa"][$n-19];
+            }elseif($n>24 AND $n<=30){
+                return $this->fibra["hexa"][$n-25];
+            }elseif($n>30 AND $n<=36){
+                return $this->fibra["hexa"][$n-31];
+            }else{
+                return "red";
+            }
+        }   
     }
 
-    public function nameColor($n){
-        if($n<=12){
-            return $this->fibra["nome"][$n-1];
-        }elseif($n>12 AND $n<=24){
-            return $this->fibra["nome"][$n-13];
-        }elseif($n>24 AND $n<=36){
-            return $this->fibra["nome"][$n-25];
-        }elseif($n>36 AND $n<=48){
-            return $this->fibra["nome"][$n-37];
-        }elseif($n>48 AND $n<=60){
-            return $this->fibra["nome"][$n-49];
-        }elseif($n>60 AND $n<=72){
-            return $this->fibra["nome"][$n-61];
+    public function nameColor($n,$toboloose){
+        if($toboloose.equal('toboloosetwelve')){
+            if($n<=12){
+                return $this->fibra["nome"][$n-1];
+            }elseif($n>12 AND $n<=24){
+                return $this->fibra["nome"][$n-13];
+            }elseif($n>24 AND $n<=36){
+                return $this->fibra["nome"][$n-25];
+            }elseif($n>36 AND $n<=48){
+                return $this->fibra["nome"][$n-37];
+            }elseif($n>48 AND $n<=60){
+                return $this->fibra["nome"][$n-49];
+            }elseif($n>60 AND $n<=72){
+                return $this->fibra["nome"][$n-61];
+            }else{
+                return 'Este grupo só possui 72 fibras';
+            }
         }else{
-            return 'Digite um número entre 1 e 72';
+            if($n<=6){
+                return $this->fibra["nome"][$n-1];
+            }elseif($n>6 AND $n<=12){
+                return $this->fibra["nome"][$n-7];
+            }elseif($n>12 AND $n<=18){
+                return $this->fibra["nome"][$n-13];
+            }elseif($n>18 AND $n<=24){
+                return $this->fibra["nome"][$n-19];
+            }elseif($n>24 AND $n<=30){
+                return $this->fibra["nome"][$n-25];
+            }elseif($n>30 AND $n<=36){
+                return $this->fibra["nome"][$n-31];
+            }else{
+                return 'Este grupo só possui 36 fibras';
+            }
         }
+        
     }
 
-    public function groupFiber($n){
-        if($n<=12){
-            return $this->fibra["grupo"][0];
-        }elseif($n>12 AND $n<=24){
-            return $this->fibra["grupo"][1];
-        }elseif($n>24 AND $n<=36){
-            return $this->fibra["grupo"][2];
-        }elseif($n>36 AND $n<=48){
-            return $this->fibra["grupo"][3];
-        }elseif($n>48 AND $n<=60){
-            return $this->fibra["grupo"][4];
-        }elseif($n>60 AND $n<=72){
-            return $this->fibra["grupo"][5];
+    public function groupFiber($n,$toboloose){
+        if($toboloose.equal('toboloosetwelve')){
+            if($n<=12){
+                return $this->fibra["grupo"][0];
+            }elseif($n>12 AND $n<=24){
+                return $this->fibra["grupo"][1];
+            }elseif($n>24 AND $n<=36){
+                return $this->fibra["grupo"][2];
+            }elseif($n>36 AND $n<=48){
+                return $this->fibra["grupo"][3];
+            }elseif($n>48 AND $n<=60){
+                return $this->fibra["grupo"][4];
+            }elseif($n>60 AND $n<=72){
+                return $this->fibra["grupo"][5];
+            }else{
+                return '';
+            }
         }else{
-            return '';
+            if($n<=6){
+                return $this->fibra["grupo"][0];
+            }elseif($n>6 AND $n<=12){
+                return $this->fibra["grupo"][1];
+            }elseif($n>12 AND $n<=18){
+                return $this->fibra["grupo"][2];
+            }elseif($n>18 AND $n<=24){
+                return $this->fibra["grupo"][3];
+            }elseif($n>24 AND $n<=30){
+                return $this->fibra["grupo"][4];
+            }elseif($n>30 AND $n<=36){
+                return $this->fibra["grupo"][5];
+            }else{
+                return '';
+            }
         }
+        
     }
 
 }
