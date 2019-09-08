@@ -61,7 +61,7 @@ html, body, .container{
 
 .container-cor{
     width: 1fr;
-    border-radius: 25%;
+    border-radius: 25px;
     max-width: 250px;
     max-height: 250px;
     justify-content: center;
