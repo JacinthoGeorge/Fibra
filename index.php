@@ -24,7 +24,7 @@
         <p>Selecione Tubolosse referente a fibra</p>
 
         <div>
-        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofseix"
+        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofsix"
                 checked>
         <label for="06">06</label>
         </div>
@@ -41,8 +41,8 @@
     <?php
 
 if(isset($_GET['n'])):
-    echo $n = $_GET['n'];
-    echo $tuboloose = $_GET['tuboloose'];
+    $n = $_GET['n'];
+    $tuboloose = $_GET['tuboloose'];
     if($n>0):
     echo "<div class='container-cor' style='background:".$fibra->colorHexa($n)."'>";
     echo "<h3>".$fibra->nameColor($n)."</h3>";
