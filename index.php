@@ -24,7 +24,7 @@
         <p>Selecione Tubolosse referente a fibra</p>
 
         <div>
-        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofseix"
+        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofsix"
                 checked>
         <label for="06">06</label>
         </div>
