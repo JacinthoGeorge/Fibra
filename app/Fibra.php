@@ -57,7 +57,7 @@ class Fibra{
         }elseif($n>60 AND $n<=72){
             return $this->fibra["hexa"][$n-61];
         }else{
-            return "Ops só é até 72";
+            return "red";
         }
     }
 
@@ -75,7 +75,7 @@ class Fibra{
         }elseif($n>60 AND $n<=72){
             return $this->fibra["nome"][$n-61];
         }else{
-            return null;
+            return 'Digite um número entre 1 e 72';
         }
     }
 
@@ -93,7 +93,7 @@ class Fibra{
         }elseif($n>60 AND $n<=72){
             return $this->fibra["grupo"][5];
         }else{
-            return null;
+            return '';
         }
     }
 

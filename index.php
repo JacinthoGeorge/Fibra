@@ -34,16 +34,19 @@
     <div>
         <form action="" method="GET">
             <input name="n" type="text" placeholder="Digite o número da fibra">
-            <input type="submit" value="Checar">
+            <input id='botao' type="submit" value="Checar">
         </form>
     </div> 
-    
+
     <?php
 
 if(isset($_GET['n'])):
     $n = $_GET['n'];
-    echo "<h3 style='color:".$fibra->colorHexa($n)."'>".$fibra->nameColor($n)."</h3>";
-     echo "<h3>".$fibra->groupFiber($n)."</h3>";
+    if($n>0):
+    echo "<div class='container-cor' style='background:".$fibra->colorHexa($n)."'>";
+    echo "<h3>".$fibra->nameColor($n)."</h3>";
+     echo "<h3>".$fibra->groupFiber($n)."</h3></div>";
+    endif;
 endif;
 
     ?>
