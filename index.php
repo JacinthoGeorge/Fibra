@@ -14,27 +14,32 @@
 
     ?>
 </head>
-<body>  
+<body>
+<header>
+        <img class="logo" src="http://redeconexaonet.com.br/wp-content/themes/conexaonet/images/xlogo.png.pagespeed.ic.1L-MPbuynN.png" alt="REDECONEXAO" width="100">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a href="#"><button>Contacts</button></a>
+    </header>
 
 <div class="container">
 
     <div>
         <form action="" method="GET">
 
-        <p>Selecione Tubolosse referente a fibra</p>
-
-        <div>
-        <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofsix"
-                checked>
-        <label for="06">06</label>
+        <h3>Selecione Tubolosse referente a fibra</h3>
+        <div class="radioGroup">
+            <input checked type="radio" id="tubolooseofseix" name="tuboloose" value="tubolooseofsix"checked>06
+            <input type="radio" id="tubolooseoftwelve" name="tuboloose" value="tubolooseoftwelve">12
         </div>
-
-        <div>
-        <input type="radio" id="tubolooseoftwelve" name="tuboloose" value="tubolooseoftwelve">
-        <label for="12">12</label>
-        </div>
-            <input name="n" type="text" placeholder="Digite o número da fibra">
-            <input id='botao' type="submit" value="Checar">
+        
+        <input name="n" type="text" placeholder="Digite o número da fibra">
+        <input id='botao' type="submit" value="Checar">
         </form>
     </div> 
 
